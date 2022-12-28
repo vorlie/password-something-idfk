@@ -1,6 +1,8 @@
 import random
 import string
 import os
+import webbrowser
+import subprocess
 
 class colors:
     HEADER = '\033[95m'
@@ -29,17 +31,22 @@ print(f"\nSave to file? ({colors.GREEN}y{colors.ENDC}/{colors.FAIL}n{colors.ENDC
 ask = input()
 
 if ask == 'y':
-    set_name = input("Set the name of your file: ")
+    set_name = input(f"\nSet the name of your file:{colors.FAIL} ")
     name = set_name + ".txt"
-    save_path = os.path.join(os.path.expanduser('~'),'Downloads', name)
+    path = os.path.join(os.path.expanduser('~'),'Downloads', name)
 
-    f = open(save_path,"a")
+    f = open(path,"a")
 
-    f.write(f"{password}")
-    print(f"\n{colors.GREEN}Your new password has been saved!{colors.ENDC}")
+    f.write(password)
+    print(f"\n{colors.ENDC}{colors.GREEN}Your new password has been saved!{colors.ENDC}")
+    f.close()
+    subprocess.Popen(f'explorer /select, "{path}"')
 else:
     print(f"\n{colors.FAIL}Your password was not saved.{colors.ENDC}")
 
+print(f"Here's my website = {colors.BLUE}https://vorlie.ga{colors.ENDC} also you can find me at {colors.BLUE}https://discord.gg/ntts{colors.ENDC}")
+
+input(f"\n{colors.WARNING}Press anything to exit{colors.ENDC}")
 
 
 
