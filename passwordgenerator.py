@@ -1,7 +1,6 @@
 import random
 import string
 import os
-import webbrowser
 import subprocess
 
 class colors:
