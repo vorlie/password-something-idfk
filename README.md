@@ -5,7 +5,6 @@ It just does what it's called, generates a password
 
 
 
-
 ## Features
 
 - Save to file
