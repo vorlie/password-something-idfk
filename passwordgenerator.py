@@ -43,7 +43,7 @@ if ask == 'y':
 else:
     print(f"\n{colors.FAIL}Your password was not saved.{colors.ENDC}")
 
-print(f"Here's my website = {colors.BLUE}https://vorlie.ga{colors.ENDC} also you can find me at {colors.BLUE}https://discord.gg/ntts{colors.ENDC}")
+print(f"Here's my website = {colors.BLUE}https://vorlie.ga{colors.ENDC}")
 
 input(f"\n{colors.WARNING}Press anything to exit{colors.ENDC}")
 
