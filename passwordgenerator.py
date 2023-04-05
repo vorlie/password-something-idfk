@@ -14,17 +14,15 @@ class colors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+print(f"{colors.BLUE}Welcome to the password generator by szefiro aru#9228{colors.ENDC}")
 
-print(f"{colors.BLUE}Welcome to the password generator by Aru#0002{colors.ENDC}")
-
-length = int(input(f"{colors.BOLD}{colors.UNDERLINE}\nEnter the length of password: {colors.ENDC}"))
+length = int(input(f"{colors.BOLD}{colors.UNDERLINE}\nEnter the length of password:{colors.ENDC} "))
 
 all = string.ascii_letters + string.digits + string.punctuation
 
 password = "".join(random.sample(all,length))
 
 print(f"\nYour new password is: {colors.UNDERLINE}{colors.GREEN}{password}{colors.ENDC}")
-
 print(f"\nSave to file? ({colors.GREEN}y{colors.ENDC}/{colors.FAIL}n{colors.ENDC})")
 
 ask = input()
