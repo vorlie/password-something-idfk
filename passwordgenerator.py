@@ -14,7 +14,7 @@ class colors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-print(f"{colors.BLUE}Welcome to the password generator by szefiro aru#9228{colors.ENDC}")
+print(f"{colors.BLUE}Welcome to the password generator by @vve1{colors.ENDC}")
 
 length = int(input(f"{colors.BOLD}{colors.UNDERLINE}\nEnter the length of password:{colors.ENDC} "))
 
@@ -41,7 +41,7 @@ if ask == 'y':
 else:
     print(f"\n{colors.FAIL}Your password was not saved.{colors.ENDC}")
 
-print(f"Here's my website = {colors.BLUE}https://vorlie.ga{colors.ENDC}")
+print(f"Here's my website = {colors.BLUE}https://vorlie.pl{colors.ENDC}")
 
 input(f"\n{colors.WARNING}Press anything to exit{colors.ENDC}")
 
